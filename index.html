@@ -1,0 +1,539 @@
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <link rel="icon" type="image/svg+xml" href="/assets/site-logo-pWmffSJa.svg">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>BART on Solana</title>
+      <meta name="Description" content="Don't have a cow, man! Get some $BART">
+      <script type="module" crossorigin="" src="/assets/index-_37ileSF.js"></script>
+      <link rel="stylesheet" crossorigin="" href="/assets/index-jb59jOkK.css">
+   </head>
+   <body style="overflow: hidden auto;">
+      <div id="root">
+         <header class="heading">
+            <nav class="navbar navbar-expand-lg navbar-light">
+               <div class="container">
+                  <a href="/" class="navbar-brand"><img src="/assets/site-logo-pWmffSJa.svg" alt=""></a><button aria-controls="responsive-navbar-nav" type="button" aria-label="Toggle navigation" class="navbar-toggler collapsed"><span class="navbar-toggler-icon"></span></button>
+                  <div class="navbar-collapse collapse" id="responsive-navbar-nav">
+                     <div class="mx-auto navbar-nav"><a>Home</a><a>About</a><a>Tokenomics</a><a>How to buy</a><a>Roadmap</a></div>
+                     <a href="#presale_coundDown_box" class="inline__btn">BUY NOW</a>
+                  </div>
+               </div>
+            </nav>
+         </header>
+         <section class="banner" id="hero">
+            <figure class="cloud1"><img src="data:image/png;base64,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" alt=""></figure>
+            <figure class="hero_middle_img d-none d-lg-block"><img src="/assets/hero-m-img-u8DEVD4-.png" alt=""></figure>
+            <div class="banner-wrapper">
+               <div class="container">
+                  <div class="align-items-center row">
+                     <div class="col-lg-7">
+                        <div class="banner-content">
+                           <h1>
+                              SPRINGFIELD AND 
+                              <span>
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="53" height="89" viewBox="0 0 53 89" fill="none">
+                                    <path d="M47.2989 32.0393L47.3 32.0383C48.8936 30.5036 49.6564 28.5071 49.6564 26.1923C49.6564 22.8081 47.9703 19.9878 44.9417 17.7611C42.2139 15.7075 38.7016 14.3297 34.4811 13.5617V12.3723C34.4811 9.07628 33.7988 6.32501 32.1764 4.38173C30.5107 2.38661 28.0741 1.5 25.1564 1.5C21.8487 1.5 19.0244 2.84809 16.7585 5.42475L15.5061 6.84885L17.1804 7.73957C18.3198 8.34575 19.0722 9.53753 19.0722 11.8957V13.7723C14.6015 14.7864 10.865 16.6384 7.93025 19.377C4.66753 22.4215 3.02749 26.2641 3.02749 30.799C3.02749 34.2268 4.29905 37.2845 6.748 39.9213L6.75972 39.9339L6.77173 39.9463C9.16835 42.4106 12.0274 44.4424 15.3326 46.0478L15.3326 46.0479L15.3414 46.052C18.5708 47.5949 21.7746 49.0583 24.9527 50.4423L24.961 50.4458C28.0816 51.7825 30.6748 53.2816 32.7629 54.9304L32.7783 54.9426L32.7941 54.9544C34.7949 56.4506 35.5911 58.0055 35.5911 59.6306C35.5911 61.2747 34.9132 62.5778 33.3873 63.6426L33.3791 63.6483L33.371 63.6542C31.8716 64.7305 29.6645 65.3584 26.579 65.3584C23.5243 65.3584 21.2298 64.828 19.5842 63.8919C17.976 62.947 17.488 61.9908 17.488 61.0603C17.488 59.8599 17.9284 58.8501 18.9012 57.954L20.1827 56.7734L18.8247 55.6817C16.5116 53.8221 14.0295 52.8091 11.4038 52.8091C8.90952 52.8091 6.69346 53.5834 4.82905 55.1447L4.81942 55.1528L4.80994 55.161C2.87154 56.8402 2 59.2368 2 62.0928C2 65.2238 3.64383 67.9674 6.49799 70.3193L6.51057 70.3297L6.52337 70.3398C9.17866 72.4326 12.5373 73.9572 16.543 74.9582V76.5483C16.543 79.8656 17.2165 82.6322 18.8192 84.5879C20.4687 86.6007 22.888 87.5 25.7887 87.5C29.1434 87.5 31.9591 86.1549 34.1336 83.5448L35.3129 82.1292L33.6875 81.2615C32.7092 80.7392 31.9519 79.5543 31.9519 76.9455V75.6207C37.0623 74.7716 41.438 72.8248 45.024 69.7434C48.9668 66.3555 51 62.1378 51 57.1684C51 53.5075 49.7258 50.2037 47.2467 47.3041C44.9004 44.499 42.0284 42.2331 38.6475 40.5058C35.4596 38.8508 32.2442 37.3285 29.0014 35.9391C25.9059 34.5386 23.274 33.1242 21.0947 31.6997C19.0712 30.2914 18.4364 29.0485 18.4364 28.0191C18.4364 26.8624 18.971 25.8801 20.4497 25.0309C22.0025 24.1393 24.0684 23.6416 26.7371 23.6416C29.4881 23.6416 31.3493 24.1504 32.5219 24.963L32.5316 24.9698L32.5414 24.9763C33.88 25.8731 34.2474 26.6852 34.2474 27.3837C34.2474 28.5625 34.0576 29.3983 33.7722 29.972L33.2067 31.1085L34.2341 31.8542C36.3642 33.4001 38.6969 34.2053 41.201 34.2053C43.634 34.2053 45.7345 33.5431 47.2989 32.0393Z" fill="#FED403" stroke="black" stroke-width="3"></path>
+                                 </svg>
+                                 BART
+                              </span>
+                           </h1>
+                           <figure class="cloud2"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAAAaCAMAAACzZpNGAAAA/FBMVEUAAAD///////9dyuz///////////////////////////////////////9Ynd////9dzO3///9amt+l2O5ZouRdyOxZm+FZn+BYnuD///9ao+NdvetZouReyu1Ym+Fgz+9Qn99dxO1dy+5XnOFsze1eye1ayurw9vvG3u560O5eyO3Q6fZdwexdvupaquXM6PV/0e52z+77/P5czOxcy+v////H3u5ey+6s2e653O7x9/vP4/HV5vLA3e73+v1btun7/f7a6fSz2u7s9PnL4O940O5dwexaqebj7vae1+5lzO5ZnuPn8Pjf7PWl2O6L0+5/0e5szu5asOeF0u7TEWLnAAAANXRSTlMA3+9gcI8gn2DPv38Qr2BQn0Aw38NwcFBAMCDv35CAEBDfv5CAgDDv7+/v39/f38/Pz79QQHSq054AAAISSURBVEjHrNJBCsQwCIXhKpq0JhKy7EHe/a82q4EyhaE1flsXPw/cnpnixMDhMvvPqU+pxODD29zSFGVcmI7yvQw1XFAtKcVeccdezSvjLqMqjHdIVpOK93Q1GVFXkg0xEk8WRJ3R5EmIohKZOMSwwtt4M7aLMTKw7Q/3DkYe2uO/GtcSkvlRRT79+zyf2spEN0EgCKDgUcE21HjX++59t4K7CKJSQBQB//9fOhBBIgRjmr4EwszO8nYgm70kv/8DkrqI1N1QaTpu3kxYqCqa+bGwEA5jSFXXKFZLp6ngyXt1naETJ3Qbfjl2wTwv8XA5IZYkN8JjlzuswjriSNAZylVSibDEbUdACC3WG4zH54D5zRoBgv+i8OahQlnEw0yMl+NYppP5KbuzWv424gAgj4SbCNcEmHMcN/WF3JZl2dVu4iecYaiaRqgldNQpcXgW0FoKC6eauWI9TIPjDG0r+wl5q4FMM/2EJWth71JaoMCfJlI03BMk+fFaKHBzT7TvDPoB4UP3uf7DHhORqT91nezOcNqeAJ50bhQKj1na/abZFBGk/TV4N2XLAo9Hr1SpEUC1/2IHLKKt67oiBnx2sZXvQGG+Wuod0itLlu/fBp9tIpZR0qE0bOZyzVKwtsYUG4oo1kVb0Yv9Sr7SauiKIgJKo1iuBSuTMDk3TLqMiD/SqTLlMsPk92G1wrTKDPR3Fr8UTX6NRjdvsAAAAABJRU5ErkJggg==" alt=""></figure>
+                           <figure class="cloud3"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAAAaCAMAAACzZpNGAAAA/FBMVEUAAAD///////9dyuz///////////////////////////////////////9Ynd////9dzO3///9amt+l2O5ZouRdyOxZm+FZn+BYnuD///9ao+NdvetZouReyu1Ym+Fgz+9Qn99dxO1dy+5XnOFsze1eye1ayurw9vvG3u560O5eyO3Q6fZdwexdvupaquXM6PV/0e52z+77/P5czOxcy+v////H3u5ey+6s2e653O7x9/vP4/HV5vLA3e73+v1btun7/f7a6fSz2u7s9PnL4O940O5dwexaqebj7vae1+5lzO5ZnuPn8Pjf7PWl2O6L0+5/0e5szu5asOeF0u7TEWLnAAAANXRSTlMA3+9gcI8gn2DPv38Qr2BQn0Aw38NwcFBAMCDv35CAEBDfv5CAgDDv7+/v39/f38/Pz79QQHSq054AAAISSURBVEjHrNJBCsQwCIXhKpq0JhKy7EHe/a82q4EyhaE1flsXPw/cnpnixMDhMvvPqU+pxODD29zSFGVcmI7yvQw1XFAtKcVeccdezSvjLqMqjHdIVpOK93Q1GVFXkg0xEk8WRJ3R5EmIohKZOMSwwtt4M7aLMTKw7Q/3DkYe2uO/GtcSkvlRRT79+zyf2spEN0EgCKDgUcE21HjX++59t4K7CKJSQBQB//9fOhBBIgRjmr4EwszO8nYgm70kv/8DkrqI1N1QaTpu3kxYqCqa+bGwEA5jSFXXKFZLp6ngyXt1naETJ3Qbfjl2wTwv8XA5IZYkN8JjlzuswjriSNAZylVSibDEbUdACC3WG4zH54D5zRoBgv+i8OahQlnEw0yMl+NYppP5KbuzWv424gAgj4SbCNcEmHMcN/WF3JZl2dVu4iecYaiaRqgldNQpcXgW0FoKC6eauWI9TIPjDG0r+wl5q4FMM/2EJWth71JaoMCfJlI03BMk+fFaKHBzT7TvDPoB4UP3uf7DHhORqT91nezOcNqeAJ50bhQKj1na/abZFBGk/TV4N2XLAo9Hr1SpEUC1/2IHLKKt67oiBnx2sZXvQGG+Wuod0itLlu/fBp9tIpZR0qE0bOZyzVKwtsYUG4oo1kVb0Yv9Sr7SauiKIgJKo1iuBSuTMDk3TLqMiD/SqTLlMsPk92G1wrTKDPR3Fr8UTX6NRjdvsAAAAABJRU5ErkJggg==" alt=""></figure>
+                           <p>Where the Simpsons token moonshot on Solana!</p>
+                           <a href="#presale_coundDown_box" class="boxed__btn">
+                              BUY NOW 
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                 <path d="M14.5 11.4298V12.6798C14.5 12.9631 14.596 13.2008 14.788 13.3928C14.98 13.5848 15.2173 13.6805 15.5 13.6798C15.7833 13.6798 16.021 13.5838 16.213 13.3918C16.405 13.1998 16.5007 12.9625 16.5 12.6798V9.02979C16.5 8.74645 16.404 8.50912 16.212 8.31779C16.02 8.12645 15.7827 8.03045 15.5 8.02979H11.85C11.5667 8.02979 11.3293 8.12579 11.138 8.31779C10.9467 8.50979 10.8507 8.74712 10.85 9.02979C10.85 9.31312 10.946 9.55079 11.138 9.74279C11.33 9.93479 11.5673 10.0305 11.85 10.0298H13.075L8.7 14.4048C8.51667 14.5881 8.425 14.8175 8.425 15.0928C8.425 15.3681 8.51667 15.6055 8.7 15.8048C8.9 16.0048 9.13767 16.1048 9.413 16.1048C9.68833 16.1048 9.92567 16.0048 10.125 15.8048L14.5 11.4298ZM12.5 22.0298C11.1167 22.0298 9.81667 21.7671 8.6 21.2418C7.38333 20.7165 6.325 20.0041 5.425 19.1048C4.525 18.2048 3.81267 17.1465 3.288 15.9298C2.76333 14.7131 2.50067 13.4131 2.5 12.0298C2.5 10.6465 2.76267 9.34645 3.288 8.12979C3.81333 6.91312 4.52567 5.85479 5.425 4.95479C6.325 4.05479 7.38333 3.34245 8.6 2.81779C9.81667 2.29312 11.1167 2.03045 12.5 2.02979C13.8833 2.02979 15.1833 2.29245 16.4 2.81779C17.6167 3.34312 18.675 4.05545 19.575 4.95479C20.475 5.85479 21.1877 6.91312 21.713 8.12979C22.2383 9.34645 22.5007 10.6465 22.5 12.0298C22.5 13.4131 22.2373 14.7131 21.712 15.9298C21.1867 17.1465 20.4743 18.2048 19.575 19.1048C18.675 20.0048 17.6167 20.7175 16.4 21.2428C15.1833 21.7681 13.8833 22.0305 12.5 22.0298Z" fill="black"></path>
+                              </svg>
+                           </a>
+                           <figure class="hero_middle_small_device_img d-lg-none mt-4"><img src="/assets/hero-m-img-u8DEVD4-.png" alt=""></figure>
+                        </div>
+                     </div>
+                     <div class="col-lg-5">
+                        <div class="banner-right mt-5 mt-lg-0">
+                           <div class="count__down">
+                              <div class="count_down_box_hook"></div>
+                              <div class="conut_down_box" id="presale_coundDown_box">
+                                 <div>
+                                    <div class="countdown_box_bottom">
+                                       <div class="token__list">
+                                          <div class="single__item d-flex align-items-center justify-content-between mb-2">
+                                             <p>Token Name:</p>
+                                             <span>BART</span>
+                                          </div>
+                                          <div class="single__item d-flex align-items-center justify-content-between mb-2">
+                                             <p>Presale Price:</p>
+                                             <span>$0.00001</span>
+                                          </div>
+                                          <div class="single__item d-flex align-items-center justify-content-between mb-2">
+                                             <p>Launch Price:</p>
+                                             <span>$0.00003</span>
+                                          </div>
+                                       </div>
+                                       <div class="progress_bar mt-3 mb-3">
+                                          <div class="p_content d-flex align-items-center justify-content-between">
+                                             <p>Presale Sold</p>
+                                             <span>94%</span>
+                                          </div>
+                                          <div class="progress">
+                                             <div role="progressbar" class="progress-bar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100" style="width: 94%;"></div>
+                                          </div>
+                                       </div>
+                                       <div class="amount-container ">
+                                          <div class="amount pay">
+                                             <div class="am_top d-flex align-items-center justify-content-between">
+                                                <p>Amount in SOL you pay:</p>
+                                             </div>
+                                             <div class="amount_box d-flex align-items-center justify-content-between">
+                                                <div class="left d-flex gap-2"><img src="/assets/sol-xcaZWdJn.svg" alt=""><span>SOL</span></div>
+                                                <div class="right"><span><input type="number" name="number" placeholder="0" id="number" value=""></span></div>
+                                             </div>
+                                          </div>
+                                          <figure class="middle_reverse mt-3 mb-1 pb-1"><img src="data:image/svg+xml,%3csvg%20width='400'%20height='38'%20viewBox='0%200%20400%2038'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1%2019.2939H399'%20stroke='%239AD2EB'%20stroke-width='2'%20stroke-linecap='round'/%3e%3ccircle%20cx='200'%20cy='18.7939'%20r='17.5'%20transform='rotate(90%20200%2018.7939)'%20fill='%2336A4D7'%20stroke='%239AD2EB'%20stroke-width='2'/%3e%3cpath%20d='M200.123%2012.6167C200.123%2012.9379%20200.384%2013.1986%20200.705%2013.1986C201.866%2013.1986%20202.847%2014.2199%20202.847%2015.4291V23.7699L201.777%2022.8266C201.536%2022.6143%20201.169%2022.6368%20200.956%2022.8779C200.858%2022.9879%20200.81%2023.1258%20200.81%2023.262C200.81%2023.423%20200.876%2023.5838%20201.007%2023.6984L203.044%2025.4954C203.263%2025.6892%20203.593%2025.6892%20203.813%2025.4954L205.85%2023.6984C206.091%2023.486%20206.114%2023.1177%20205.901%2022.8767C205.688%2022.636%20205.321%2022.6127%20205.08%2022.8255L204.01%2023.77V15.4285C204.01%2013.5885%20202.496%2012.0342%20200.705%2012.0342C200.384%2012.0348%20200.123%2012.2955%20200.123%2012.6167Z'%20fill='%23FED41D'/%3e%3cpath%20d='M199.861%2025.0587C199.861%2024.7375%20199.705%2024.4768%20199.384%2024.4768C198.223%2024.4768%20197.347%2023.4561%20197.347%2022.2468V13.9055L198.312%2014.8488C198.553%2015.0618%20198.869%2015.0385%20199.082%2014.7976C199.179%2014.687%20199.201%2014.5497%20199.201%2014.4129C199.201%2014.2517%20199.121%2014.0911%20198.991%2013.9759L196.948%2012.1795C196.728%2011.9857%20196.394%2011.9857%20196.174%2012.1795L194.136%2013.9759C193.894%2014.1889%20193.871%2014.5567%20194.083%2014.7976C194.297%2015.0385%20194.768%2015.0618%20195.009%2014.8488L196.184%2013.9055V22.2468C196.184%2024.0869%20197.594%2025.6412%20199.385%2025.6412C199.705%2025.6406%20199.861%2025.3811%20199.861%2025.0587Z'%20fill='%23FED41D'/%3e%3c/svg%3e" alt=""></figure>
+                                          <div class="amount receive">
+                                             <p>Amount in BART you receive:</p>
+                                             <div class="amount_box d-flex align-items-center justify-content-between mt-2">
+                                                <div class="left d-flex gap-2"><img src="/assets/bart_logo-cMvGX1qV.svg" alt=""><span>BART</span></div>
+                                                <div class="right"><span><input type="number" name="inputNumber2" id="inputNumber2" placeholder="0" value="0"></span></div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="d-block text-center mt-3">
+                                          <div>
+                                             <div class="wallet-adapter-dropdown">
+                                                <button class="wallet-adapter-button wallet-adapter-button-trigger" tabindex="0" type="button" style="pointer-events: auto; background-color: rgb(254, 212, 3); color: rgb(1, 2, 2); border-radius: 10px; justify-content: center; width: 100%;"><i class="wallet-adapter-button-start-icon"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTA4IiBoZWlnaHQ9IjEwOCIgdmlld0JveD0iMCAwIDEwOCAxMDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMDgiIGhlaWdodD0iMTA4IiByeD0iMjYiIGZpbGw9IiNBQjlGRjIiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik00Ni41MjY3IDY5LjkyMjlDNDIuMDA1NCA3Ni44NTA5IDM0LjQyOTIgODUuNjE4MiAyNC4zNDggODUuNjE4MkMxOS41ODI0IDg1LjYxODIgMTUgODMuNjU2MyAxNSA3NS4xMzQyQzE1IDUzLjQzMDUgNDQuNjMyNiAxOS44MzI3IDcyLjEyNjggMTkuODMyN0M4Ny43NjggMTkuODMyNyA5NCAzMC42ODQ2IDk0IDQzLjAwNzlDOTQgNTguODI1OCA4My43MzU1IDc2LjkxMjIgNzMuNTMyMSA3Ni45MTIyQzcwLjI5MzkgNzYuOTEyMiA2OC43MDUzIDc1LjEzNDIgNjguNzA1MyA3Mi4zMTRDNjguNzA1MyA3MS41NzgzIDY4LjgyNzUgNzAuNzgxMiA2OS4wNzE5IDY5LjkyMjlDNjUuNTg5MyA3NS44Njk5IDU4Ljg2ODUgODEuMzg3OCA1Mi41NzU0IDgxLjM4NzhDNDcuOTkzIDgxLjM4NzggNDUuNjcxMyA3OC41MDYzIDQ1LjY3MTMgNzQuNDU5OEM0NS42NzEzIDcyLjk4ODQgNDUuOTc2OCA3MS40NTU2IDQ2LjUyNjcgNjkuOTIyOVpNODMuNjc2MSA0Mi41Nzk0QzgzLjY3NjEgNDYuMTcwNCA4MS41NTc1IDQ3Ljk2NTggNzkuMTg3NSA0Ny45NjU4Qzc2Ljc4MTYgNDcuOTY1OCA3NC42OTg5IDQ2LjE3MDQgNzQuNjk4OSA0Mi41Nzk0Qzc0LjY5ODkgMzguOTg4NSA3Ni43ODE2IDM3LjE5MzEgNzkuMTg3NSAzNy4xOTMxQzgxLjU1NzUgMzcuMTkzMSA4My42NzYxIDM4Ljk4ODUgODMuNjc2MSA0Mi41Nzk0Wk03MC4yMTAzIDQyLjU3OTVDNzAuMjEwMyA0Ni4xNzA0IDY4LjA5MTYgNDcuOTY1OCA2NS43MjE2IDQ3Ljk2NThDNjMuMzE1NyA0Ny45NjU4IDYxLjIzMyA0Ni4xNzA0IDYxLjIzMyA0Mi41Nzk1QzYxLjIzMyAzOC45ODg1IDYzLjMxNTcgMzcuMTkzMSA2NS43MjE2IDM3LjE5MzFDNjguMDkxNiAzNy4xOTMxIDcwLjIxMDMgMzguOTg4NSA3MC4yMTAzIDQyLjU3OTVaIiBmaWxsPSIjRkZGREY4Ii8+Cjwvc3ZnPgo=" alt="Phantom icon"></i>Connect</button>
+                                                <ul aria-label="dropdown-list" class="wallet-adapter-dropdown-list false" role="menu">
+                                                   <li class="wallet-adapter-dropdown-list-item" role="menuitem">Change wallet</li>
+                                                   <li class="wallet-adapter-dropdown-list-item" role="menuitem">Disconnect</li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <figure class="cloud4"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZQAAABPCAMAAAD7lcPKAAABUFBMVEUAAAD///////////////////////////////9cy+v///////9YnOL///////9YnuL///////9eye1anuP///9YneJamt9fyu5ZneFYneBax+lYmt9dyuxZnN9Qn99XnOFfzO5bsehZnOFdyu1byuxYm99ayupZneJdyu5ZnOL///9cs+deyO3///9areZdyO5dy+1ar+Vgz+/s9PpdwuxbsueJ0+5dxeyS1O1ey+1Zr+Z4zuxyz+70+PyL0u5csuharebx9flcv+u74+/////H3u5ey+5ZneLc6vTV5vK63O540O6F0+6f1+6s2e7Q4/Hq8/nn8Pj7/f73+v3x9/tdwOxbtunj7vbL4O9rze6z2u6L0+5aoeTt9frZ6POS1e5arefA3e6l2O6Z1u5eyO1xzu5dxe1lzO5aqOXf7PV/0e5apeRbsedcvOpcuurG6/fXV/ciAAAARHRSTlMA30AQ7yBgn79Aj3C/UDCff8+A76+AMN9wYCAgYFAQkO/vz59QQDDfv6+Av5Bv369wYBDv78/F16CAcGDv39+vr4CAQO3J4xYAAAfhSURBVHja7NtdisIwEMDxyeSThAQDPUVhbzH3P9MqlbW7dNVahUwmvycfxJc/zXTUgnS6oDtDtPBGtmTnXMaiYdjDujgpQzd1SqgPR8bk6+9PnXOB4SGNp2Bok3q9jMY0Kdpkwoww/E+nYOi+GrPdfdlVeiA4C8N2EXqO8q48GSR5RYvRZT+caJdzGIS7ivOGdvFjwKxhoBeoMM3Zbh1Ys6+KXhDGeFklOUB5BACM3s/LC0MH+HGIXehIRxn1U2gpMrIc82WoMcqBbBioQUr0xRKpUSeQylZqltSLBZubJmtK5N3xFzUugTgnap64wcKgibgqLJoIq5KJCUF7pG36vmvNiLkz1orYUFJ+ym92j98SQQRHrIhYIi2jw0vMAdbk98L3BOgeq4EiZKwwbNL7DmnZnV2L0O+6ok9slsa/lOtx3FtME9skF2ZK2E8Ym5OvrHvcGOCvuBg6yXEFvOns++rBPwrjmd5rFOupU8BWe396FB+F64LYcxRuXwJ/Poou2TnUj99S4Go0+WgUe3vW0oSYt8qU5Ovq4UENb1f6bvLNzrnsNgwCUVS2VRM5SpR8S9bd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" alt=""></figure>
+            <figure class="cloud5"><img src="data:image/png;base64,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" alt=""></figure>
+         </section>
+         <section class="theBart_area zigzag__bg">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-8">
+                     <div class="theBart_left_content">
+                        <div class="theBart_left_content_inner">
+                           <h2>THE BART</h2>
+                           <li>In the heart of Springfield, where Lisa's wisdom met Homer's folly,</li>
+                           <li>$BART token emerged, a crypto saga so jolly.</li>
+                           <li>A nod to Bart Simpson's mischief, it was born with a grin,</li>
+                           <li>For a playful, decentralized world, where the fun would begin.</li>
+                           <a href="#presale_coundDown_box" class="inline__btn mt-4">BUY NOW</a>
+                        </div>
+                        <figure class="cloud"><img src="/assets/large-cloud-9oTb4rN-.png" alt=""></figure>
+                     </div>
+                  </div>
+                  <div class="col-lg-4">
+                     <figure><img src="/assets/bard-right-img-4-dodRXj.png" alt=""></figure>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="about__area" id="about">
+            <div class="container">
+               <div class="justify-content-center row">
+                  <div class="text-center col-md-10">
+                     <h2>
+                        ABOUT 
+                        <span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="44" height="76" viewBox="0 0 44 76" fill="none">
+                              <path d="M39.479 26.7207L39.4797 26.7201C40.7877 25.4665 41.4198 23.8341 41.4198 21.9181C41.4198 19.1281 40.0282 16.7912 37.4788 14.9264C35.1271 13.1642 32.0707 11.985 28.3638 11.3419V10.0862C28.3638 7.29604 27.7823 5.01712 26.4469 3.42551C25.0834 1.80026 23.0806 1.06226 20.6319 1.06226C17.8775 1.06226 15.5256 2.17516 13.6266 4.32404L12.7855 5.27576L13.908 5.87002C15.0145 6.45581 15.6879 7.59673 15.6879 9.67821V11.5119C11.7827 12.3593 8.54133 13.9403 6.01152 16.2894C3.26437 18.8403 1.88399 22.0546 1.88399 25.8621C1.88399 28.7207 2.9472 31.2714 5.00892 33.4804L5.01676 33.4888L5.02479 33.497C7.06156 35.5811 9.49317 37.3015 12.3088 38.6624L12.3146 38.6652C15.09 39.9847 17.8433 41.2361 20.5743 42.4196L20.5798 42.4219C23.2829 43.5741 25.5373 44.8698 27.358 46.3003L27.3683 46.3084L27.3788 46.3162C29.1518 47.6357 29.8998 49.0433 29.8998 50.546C29.8998 52.0512 29.2662 53.2509 27.8814 54.2126L27.8814 54.2125L27.8706 54.2202C26.5135 55.1896 24.5464 55.7339 21.8559 55.7339C19.1961 55.7339 17.1658 55.2747 15.6907 54.4392C14.25 53.5973 13.7439 52.6987 13.7439 51.7699C13.7439 50.6604 14.1586 49.7218 15.0516 48.9031L15.9122 48.1143L15.0006 47.3851C13.0502 45.8247 10.9776 44.99 8.79996 44.99C6.72002 44.99 4.88099 45.6308 3.3318 46.9217L3.32538 46.9271L3.31905 46.9326C1.73004 48.3024 1 50.2668 1 52.6539C1 55.2248 2.35312 57.5007 4.7659 59.4792L4.7743 59.4861L4.78284 59.4928C7.07542 61.2909 9.99845 62.5982 13.5119 63.4467V65.0299C13.5119 67.8392 14.0864 70.1321 15.406 71.7345C16.7562 73.3741 18.7437 74.1218 21.1759 74.1218C23.9718 74.1218 26.3129 73.0109 28.1306 70.8398L28.9227 69.8936L27.833 69.3147C26.8546 68.795 26.1879 67.6487 26.1879 65.3699V63.9944C30.6426 63.2968 34.4375 61.6374 37.5337 58.9899C40.8666 56.14 42.5758 52.6055 42.5758 48.438C42.5758 45.3739 41.5058 42.6089 39.4138 40.1744C37.4207 37.8029 34.9804 35.8865 32.1043 34.4243C29.3667 33.01 26.6056 31.7092 23.8212 30.5221C21.1451 29.3174 18.8649 28.0984 16.9731 26.8676C15.1944 25.6365 14.5599 24.4969 14.5599 23.4821C14.5599 22.3723 15.0923 21.4463 16.4361 20.6784C17.8288 19.8825 19.6609 19.4502 21.9919 19.4502C24.3879 19.4502 26.0581 19.8899 27.1361 20.6334L27.1426 20.6378L27.1491 20.6422C28.3484 21.4417 28.7438 22.2139 28.7438 22.9381C28.7438 23.9742 28.5767 24.7364 28.3054 25.2789L27.9253 26.0391L28.6143 26.5368C30.4018 27.8277 32.3492 28.4941 34.4358 28.4941C36.4749 28.4941 38.2011 27.9431 39.479 26.7207Z" fill="#FED41D" stroke="black" stroke-width="2"></path>
+                           </svg>
+                           BART
+                        </span>
+                        TOKEN
+                     </h2>
+                     <p>Introducing $BART, the memecoin inspired in Bart Simpson! He Is well-versed in staying cool wthin the De-Fi world. Making waves in the crypto arena, $BART&nbsp;isn't just a currency; it's a meme-orable investment that's howling its way to the moon!</p>
+                     <a href="#presale_coundDown_box" class="inline__btn mt-5">BUY NOW</a>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="tokenomics__area zigzag__bg" id="tokenomics">
+            <div class="container">
+               <div class="align-items-center row">
+                  <div class="text-center col-lg-6">
+                     <figure class="chartImg"><img src="/assets/chart-AxfZsFkf.png" alt=""></figure>
+                  </div>
+                  <div class="mt-5 mt-lg-0 col-lg-6">
+                     <h2>Tokenomics</h2>
+                     <div class="token__list">
+                        <div class="single_item d-flex justify-content-between align-items-center mb-4">
+                           <div class="content">
+                              <h5>Liquidity  Pool</h5>
+                              <span>35 billion $BART</span>
+                           </div>
+                           <div class="value"><span>35%</span></div>
+                        </div>
+                        <div class="single_item d-flex justify-content-between align-items-center mb-4">
+                           <div class="content">
+                              <h5>Presale</h5>
+                              <span>30 billion $BART</span>
+                           </div>
+                           <div class="value"><span>30%</span></div>
+                        </div>
+                        <div class="single_item d-flex justify-content-between align-items-center mb-4">
+                           <div class="content">
+                              <h5>Future development</h5>
+                              <span>20 billion $BART</span>
+                           </div>
+                           <div class="value"><span>20%</span></div>
+                        </div>
+                        <div class="single_item d-flex justify-content-between align-items-center mb-4">
+                           <div class="content">
+                              <h5>Staking  rewards</h5>
+                              <span>10 billion $BART</span>
+                           </div>
+                           <div class="value"><span>10%</span></div>
+                        </div>
+                        <div class="single_item d-flex justify-content-between align-items-center mb-4">
+                           <div class="content">
+                              <h5>Team</h5>
+                              <span>5 billion $BART</span>
+                           </div>
+                           <div class="value"><span>5%</span></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="howtobuy__area" id="howtobuy">
+            <figure class="cloudleft"><img src="/assets/large-cloud-9oTb4rN-.png" alt=""></figure>
+            <div class="container">
+               <div class="row">
+                  <div class="col">
+                     <div class="section__title text-center mb-5 pb-2">
+                        <h2>
+                           How To Buy 
+                           <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="44" height="76" viewBox="0 0 44 76" fill="none">
+                                 <path d="M39.479 26.7207L39.4797 26.7201C40.7877 25.4665 41.4198 23.8341 41.4198 21.9181C41.4198 19.1281 40.0282 16.7912 37.4788 14.9264C35.1271 13.1642 32.0707 11.985 28.3638 11.3419V10.0862C28.3638 7.29604 27.7823 5.01712 26.4469 3.42551C25.0834 1.80026 23.0806 1.06226 20.6319 1.06226C17.8775 1.06226 15.5256 2.17516 13.6266 4.32404L12.7855 5.27576L13.908 5.87002C15.0145 6.45581 15.6879 7.59673 15.6879 9.67821V11.5119C11.7827 12.3593 8.54133 13.9403 6.01152 16.2894C3.26437 18.8403 1.88399 22.0546 1.88399 25.8621C1.88399 28.7207 2.9472 31.2714 5.00892 33.4804L5.01676 33.4888L5.02479 33.497C7.06156 35.5811 9.49317 37.3015 12.3088 38.6624L12.3146 38.6652C15.09 39.9847 17.8433 41.2361 20.5743 42.4196L20.5798 42.4219C23.2829 43.5741 25.5373 44.8698 27.358 46.3003L27.3683 46.3084L27.3788 46.3162C29.1518 47.6357 29.8998 49.0433 29.8998 50.546C29.8998 52.0512 29.2662 53.2509 27.8814 54.2126L27.8814 54.2125L27.8706 54.2202C26.5135 55.1896 24.5464 55.7339 21.8559 55.7339C19.1961 55.7339 17.1658 55.2747 15.6907 54.4392C14.25 53.5973 13.7439 52.6987 13.7439 51.7699C13.7439 50.6604 14.1586 49.7218 15.0516 48.9031L15.9122 48.1143L15.0006 47.3851C13.0502 45.8247 10.9776 44.99 8.79996 44.99C6.72002 44.99 4.88099 45.6308 3.3318 46.9217L3.32538 46.9271L3.31905 46.9326C1.73004 48.3024 1 50.2668 1 52.6539C1 55.2248 2.35312 57.5007 4.7659 59.4792L4.7743 59.4861L4.78284 59.4928C7.07542 61.2909 9.99845 62.5982 13.5119 63.4467V65.0299C13.5119 67.8392 14.0864 70.1321 15.406 71.7345C16.7562 73.3741 18.7437 74.1218 21.1759 74.1218C23.9718 74.1218 26.3129 73.0109 28.1306 70.8398L28.9227 69.8936L27.833 69.3147C26.8546 68.795 26.1879 67.6487 26.1879 65.3699V63.9944C30.6426 63.2968 34.4375 61.6374 37.5337 58.9899C40.8666 56.14 42.5758 52.6055 42.5758 48.438C42.5758 45.3739 41.5058 42.6089 39.4138 40.1744C37.4207 37.8029 34.9804 35.8865 32.1043 34.4243C29.3667 33.01 26.6056 31.7092 23.8212 30.5221C21.1451 29.3174 18.8649 28.0984 16.9731 26.8676C15.1944 25.6365 14.5599 24.4969 14.5599 23.4821C14.5599 22.3723 15.0923 21.4463 16.4361 20.6784C17.8288 19.8825 19.6609 19.4502 21.9919 19.4502C24.3879 19.4502 26.0581 19.8899 27.1361 20.6334L27.1426 20.6378L27.1491 20.6422C28.3484 21.4417 28.7438 22.2139 28.7438 22.9381C28.7438 23.9742 28.5767 24.7364 28.3054 25.2789L27.9253 26.0391L28.6143 26.5368C30.4018 27.8277 32.3492 28.4941 34.4358 28.4941C36.4749 28.4941 38.2011 27.9431 39.479 26.7207Z" fill="#FED41D" stroke="black" stroke-width="2"></path>
+                              </svg>
+                              BART
+                           </span>
+                           Token
+                        </h2>
+                        <p>Ready to join the meme token craze? Buying meme tokens ls simple! Head to our website and link your Phantom wallet and complete the purchase. Embrace the fun of $BART culture with ease!</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="mb-4 col-md-6">
+                     <div class="howtobuy_single_item text-center">
+                        <figure><img src="/assets/token-img1-Tqs-z56u.png" alt=""></figure>
+                        <h4>Click on Buy Button</h4>
+                        <p>Ready to invest in the next big thing? Head to our buy section now and grab your share of the $BART coin revolution. Don't miss out on the moon ride!</p>
+                     </div>
+                  </div>
+                  <div class="mb-4 col-md-6">
+                     <div class="howtobuy_single_item text-center">
+                        <figure><img src="/assets/token-img2-y-1ama7V.png" alt=""></figure>
+                        <h4>Connect your Phantom wallet</h4>
+                        <p>Connect your wallet to join the meme coin revolution! Seamlessly participate in the fun and wild ride of our community-driven token. Don't miss out!</p>
+                     </div>
+                  </div>
+                  <div class="mb-4 col-md-6">
+                     <div class="howtobuy_single_item text-center">
+                        <figure><img src="/assets/token-img3-xTQ_Xnxs.png" alt=""></figure>
+                        <h4>Ch00se Amount to Buy</h4>
+                        <p>Choose the amount to buy and join the meme coin frenzy!</p>
+                     </div>
+                  </div>
+                  <div class="mb-4 col-md-6">
+                     <div class="howtobuy_single_item text-center">
+                        <figure><img src="/assets/token-img4-gGe-vtVd.png" alt=""></figure>
+                        <h4>Buy  BART token</h4>
+                        <p>Buy $BART token and join the meme revolution! Embrace the laughter, fun and potential gains. Secure your spot in the meme coin world. Hurry up!</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <figure class="cloudright"><img src="/assets/large-cloud-9oTb4rN-.png" alt=""></figure>
+         </section>
+         <section class="road__map__area zigzag__bg" id="roadmap">
+            <figure class="cloud_r_Img1"><img src="/assets/large-cloud-9oTb4rN-.png" alt=""></figure>
+            <figure class="cloud_r_Img2"><img src="/assets/large-cloud-9oTb4rN-.png" alt=""></figure>
+            <div class="container">
+               <div class="row">
+                  <div class="col">
+                     <div class="section__title text-center">
+                        <h2>ROADMAP</h2>
+                     </div>
+                  </div>
+               </div>
+               <div class="justify-content-center row">
+                  <div class="col-lg-10">
+                     <div class="road_map_inner">
+                        <div class="timeline-container">
+                           <div class="timeline-item">
+                              <div class="timeline-item-content">
+                                 <span class="tag">PHASE 1</span>
+                                 <div class="roadmap_lists">
+                                    <li>Launch on Solana</li>
+                                    <li>Website Landing Page</li>
+                                    <li>Presale</li>
+                                 </div>
+                                 <span class="circle"></span>
+                              </div>
+                           </div>
+                           <div class="timeline-item">
+                              <div class="timeline-item-content">
+                                 <span class="tag">PHASE 2</span>
+                                 <div class="roadmap_lists">
+                                    <li>Public Presale</li>
+                                    <li>Dexscreener and Birdeye Update</li>
+                                    <li>Build Community</li>
+                                 </div>
+                                 <span class="circle"></span>
+                              </div>
+                           </div>
+                           <div class="timeline-item">
+                              <div class="timeline-item-content">
+                                 <span class="tag">PHASE 3</span>
+                                 <div class="roadmap_lists">
+                                    <li>Trending on X</li>
+                                    <li>CG CMC Listing</li>
+                                    <li>NFT Airdrop</li>
+                                 </div>
+                                 <span class="circle"></span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <figure class="cloud_r_Img3"><img src="/assets/large-cloud-9oTb4rN-.png" alt=""></figure>
+            <figure class="cloud_r_Img4"><img src="/assets/large-cloud-9oTb4rN-.png" alt=""></figure>
+            <figure class="cloud_r_Img5"><img src="/assets/large-cloud-9oTb4rN-.png" alt=""></figure>
+         </section>
+         <section class="another_way_area" id="presale">
+            <div class="container">
+               <div class="justify-content-center row">
+                  <div class="text-center col-lg-8 col-md-9 col-sm-10">
+                     <div class="section__title">
+                        <h2>Another Way to Join the Presale</h2>
+                        <p>Having trouble with the DApp or want a simpler method? Participate in the $BART presale by sending your chosen SOL amount directly to the address:</p>
+                     </div>
+                     <div class="qr_code_box mt-5">
+                        <p class="min_max">(Minimum 0.5 SOL, Maximum 50 SOL).</p>
+                        <div class="qr_box_inner d-flex align-items-center gap-5">
+                           <figure><img src="/assets/QR-CODE--FEEA-xB.png" alt=""></figure>
+                           <div class="content">
+                              <h5>Address</h5>
+                              <p>bartcoin.sol</p>
+                              <button class="boxed__btn">Copy Address</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="why_choose_area zigzag__bg">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-5">
+                     <figure class="choose_left_img"><img src="/assets/why-choose-left-img-Pnw_S84z.png" alt=""></figure>
+                  </div>
+                  <div class="col-lg-7">
+                     <div class="why_choose_content">
+                        <h3>Why Choose Bart</h3>
+                        <div class="single_item d-flex align-items-center gap-4">
+                           <figure><img src="data:image/png;base64,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" alt=""></figure>
+                           <div class="content">
+                              <h5>Solana's Speed</h5>
+                              <p>Take advantage of Solana's rapid transaction speed as $BART ensures swift and seamless transactions.</p>
+                           </div>
+                        </div>
+                        <div class="single_item d-flex align-items-center gap-4">
+                           <figure><img src="/assets/why-choose-right-img2-k0ugJ_FI.png" alt=""></figure>
+                           <div class="content">
+                              <h5>Community-Focused</h5>
+                              <p>More than a memecoin, $BART thrives on community engagement. Join us as we create a dynamic space for $BART enthusiasts.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="bart_it_one_area">
+            <div class="container">
+               <div class="align-items-center row">
+                  <div class="order-2 order-md-1 text-center text-md-start mt-5 mt-md-0 col-lg-8 col-md-6">
+                     <h2>
+                        <span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="44" height="76" viewBox="0 0 44 76" fill="none">
+                              <path d="M39.479 26.7207L39.4797 26.7201C40.7877 25.4665 41.4198 23.8341 41.4198 21.9181C41.4198 19.1281 40.0282 16.7912 37.4788 14.9264C35.1271 13.1642 32.0707 11.985 28.3638 11.3419V10.0862C28.3638 7.29604 27.7823 5.01712 26.4469 3.42551C25.0834 1.80026 23.0806 1.06226 20.6319 1.06226C17.8775 1.06226 15.5256 2.17516 13.6266 4.32404L12.7855 5.27576L13.908 5.87002C15.0145 6.45581 15.6879 7.59673 15.6879 9.67821V11.5119C11.7827 12.3593 8.54133 13.9403 6.01152 16.2894C3.26437 18.8403 1.88399 22.0546 1.88399 25.8621C1.88399 28.7207 2.9472 31.2714 5.00892 33.4804L5.01676 33.4888L5.02479 33.497C7.06156 35.5811 9.49317 37.3015 12.3088 38.6624L12.3146 38.6652C15.09 39.9847 17.8433 41.2361 20.5743 42.4196L20.5798 42.4219C23.2829 43.5741 25.5373 44.8698 27.358 46.3003L27.3683 46.3084L27.3788 46.3162C29.1518 47.6357 29.8998 49.0433 29.8998 50.546C29.8998 52.0512 29.2662 53.2509 27.8814 54.2126L27.8814 54.2125L27.8706 54.2202C26.5135 55.1896 24.5464 55.7339 21.8559 55.7339C19.1961 55.7339 17.1658 55.2747 15.6907 54.4392C14.25 53.5973 13.7439 52.6987 13.7439 51.7699C13.7439 50.6604 14.1586 49.7218 15.0516 48.9031L15.9122 48.1143L15.0006 47.3851C13.0502 45.8247 10.9776 44.99 8.79996 44.99C6.72002 44.99 4.88099 45.6308 3.3318 46.9217L3.32538 46.9271L3.31905 46.9326C1.73004 48.3024 1 50.2668 1 52.6539C1 55.2248 2.35312 57.5007 4.7659 59.4792L4.7743 59.4861L4.78284 59.4928C7.07542 61.2909 9.99845 62.5982 13.5119 63.4467V65.0299C13.5119 67.8392 14.0864 70.1321 15.406 71.7345C16.7562 73.3741 18.7437 74.1218 21.1759 74.1218C23.9718 74.1218 26.3129 73.0109 28.1306 70.8398L28.9227 69.8936L27.833 69.3147C26.8546 68.795 26.1879 67.6487 26.1879 65.3699V63.9944C30.6426 63.2968 34.4375 61.6374 37.5337 58.9899C40.8666 56.14 42.5758 52.6055 42.5758 48.438C42.5758 45.3739 41.5058 42.6089 39.4138 40.1744C37.4207 37.8029 34.9804 35.8865 32.1043 34.4243C29.3667 33.01 26.6056 31.7092 23.8212 30.5221C21.1451 29.3174 18.8649 28.0984 16.9731 26.8676C15.1944 25.6365 14.5599 24.4969 14.5599 23.4821C14.5599 22.3723 15.0923 21.4463 16.4361 20.6784C17.8288 19.8825 19.6609 19.4502 21.9919 19.4502C24.3879 19.4502 26.0581 19.8899 27.1361 20.6334L27.1426 20.6378L27.1491 20.6422C28.3484 21.4417 28.7438 22.2139 28.7438 22.9381C28.7438 23.9742 28.5767 24.7364 28.3054 25.2789L27.9253 26.0391L28.6143 26.5368C30.4018 27.8277 32.3492 28.4941 34.4358 28.4941C36.4749 28.4941 38.2011 27.9431 39.479 26.7207Z" fill="#FED41D" stroke="black" stroke-width="2"></path>
+                           </svg>
+                           BART
+                        </span>
+                        IS THE ONE
+                     </h2>
+                     <p>Don't have a cow, man! Get some <a href="#">$BART.</a></p>
+                     <a href="#presale_coundDown_box" class="boxed__btn mt-4 mt-md-5">
+                        BUY NOW 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                           <path d="M14.5 11.4298V12.6798C14.5 12.9631 14.596 13.2008 14.788 13.3928C14.98 13.5848 15.2173 13.6805 15.5 13.6798C15.7833 13.6798 16.021 13.5838 16.213 13.3918C16.405 13.1998 16.5007 12.9625 16.5 12.6798V9.02979C16.5 8.74645 16.404 8.50912 16.212 8.31779C16.02 8.12645 15.7827 8.03045 15.5 8.02979H11.85C11.5667 8.02979 11.3293 8.12579 11.138 8.31779C10.9467 8.50979 10.8507 8.74712 10.85 9.02979C10.85 9.31312 10.946 9.55079 11.138 9.74279C11.33 9.93479 11.5673 10.0305 11.85 10.0298H13.075L8.7 14.4048C8.51667 14.5881 8.425 14.8175 8.425 15.0928C8.425 15.3681 8.51667 15.6055 8.7 15.8048C8.9 16.0048 9.13767 16.1048 9.413 16.1048C9.68833 16.1048 9.92567 16.0048 10.125 15.8048L14.5 11.4298ZM12.5 22.0298C11.1167 22.0298 9.81667 21.7671 8.6 21.2418C7.38333 20.7165 6.325 20.0041 5.425 19.1048C4.525 18.2048 3.81267 17.1465 3.288 15.9298C2.76333 14.7131 2.50067 13.4131 2.5 12.0298C2.5 10.6465 2.76267 9.34645 3.288 8.12979C3.81333 6.91312 4.52567 5.85479 5.425 4.95479C6.325 4.05479 7.38333 3.34245 8.6 2.81779C9.81667 2.29312 11.1167 2.03045 12.5 2.02979C13.8833 2.02979 15.1833 2.29245 16.4 2.81779C17.6167 3.34312 18.675 4.05545 19.575 4.95479C20.475 5.85479 21.1877 6.91312 21.713 8.12979C22.2383 9.34645 22.5007 10.6465 22.5 12.0298C22.5 13.4131 22.2373 14.7131 21.712 15.9298C21.1867 17.1465 20.4743 18.2048 19.575 19.1048C18.675 20.0048 17.6167 20.7175 16.4 21.2428C15.1833 21.7681 13.8833 22.0305 12.5 22.0298Z" fill="black"></path>
+                        </svg>
+                     </a>
+                  </div>
+                  <div class="order-1 order-md-2 col-lg-4 col-md-6">
+                     <figure class="bartIsOne_img"><img src="/assets/bard-is-the-one-right-img-qpC00Ara.png" alt=""></figure>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="hodl_area zigzag__bg">
+            <div class="container">
+               <div class="align-items-center row">
+                  <div class="col-lg-5 col-md-6">
+                     <figure><img src="/assets/hodl-HkWB0Of1.png" alt=""></figure>
+                  </div>
+                  <div class="col-lg-6 col-md-6 offset-lg-1">
+                     <div class="hodl_box">
+                        <h2>HOdl</h2>
+                        <p>With $BART, the market is not just bullish; it's downright howlish. Forget traditional charts; we're trading in memes and laughs. Join us as we transform the financial landscape into a comic strip, and let's howl all.</p>
+                        <a href="#presale_coundDown_box" class="boxed__btn">
+                           BUY NOW 
+                           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                              <path d="M14.5 11.4298V12.6798C14.5 12.9631 14.596 13.2008 14.788 13.3928C14.98 13.5848 15.2173 13.6805 15.5 13.6798C15.7833 13.6798 16.021 13.5838 16.213 13.3918C16.405 13.1998 16.5007 12.9625 16.5 12.6798V9.02979C16.5 8.74645 16.404 8.50912 16.212 8.31779C16.02 8.12645 15.7827 8.03045 15.5 8.02979H11.85C11.5667 8.02979 11.3293 8.12579 11.138 8.31779C10.9467 8.50979 10.8507 8.74712 10.85 9.02979C10.85 9.31312 10.946 9.55079 11.138 9.74279C11.33 9.93479 11.5673 10.0305 11.85 10.0298H13.075L8.7 14.4048C8.51667 14.5881 8.425 14.8175 8.425 15.0928C8.425 15.3681 8.51667 15.6055 8.7 15.8048C8.9 16.0048 9.13767 16.1048 9.413 16.1048C9.68833 16.1048 9.92567 16.0048 10.125 15.8048L14.5 11.4298ZM12.5 22.0298C11.1167 22.0298 9.81667 21.7671 8.6 21.2418C7.38333 20.7165 6.325 20.0041 5.425 19.1048C4.525 18.2048 3.81267 17.1465 3.288 15.9298C2.76333 14.7131 2.50067 13.4131 2.5 12.0298C2.5 10.6465 2.76267 9.34645 3.288 8.12979C3.81333 6.91312 4.52567 5.85479 5.425 4.95479C6.325 4.05479 7.38333 3.34245 8.6 2.81779C9.81667 2.29312 11.1167 2.03045 12.5 2.02979C13.8833 2.02979 15.1833 2.29245 16.4 2.81779C17.6167 3.34312 18.675 4.05545 19.575 4.95479C20.475 5.85479 21.1877 6.91312 21.713 8.12979C22.2383 9.34645 22.5007 10.6465 22.5 12.0298C22.5 13.4131 22.2373 14.7131 21.712 15.9298C21.1867 17.1465 20.4743 18.2048 19.575 19.1048C18.675 20.0048 17.6167 20.7175 16.4 21.2428C15.1833 21.7681 13.8833 22.0305 12.5 22.0298Z" fill="black"></path>
+                           </svg>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="beyond_memes_area">
+            <div class="container">
+               <div class="justify-content-center row">
+                  <div class="col-md-8">
+                     <div class="section__title text-center">
+                        <h2>beyond  memes  new  utilities  await</h2>
+                     </div>
+                  </div>
+               </div>
+               <div class="beyond_inner row">
+                  <figure class="cloudImg top"><img src="/assets/large-cloud-9oTb4rN-.png" alt=""></figure>
+                  <div class="mb-3 col-md-4 col-sm-6">
+                     <div class="single__beyond__item text-center">
+                        <h5>BART Wear</h5>
+                        <p>Effortlessly trade $BART tokens on our decentralized exchange.</p>
+                     </div>
+                  </div>
+                  <div class="mb-3 col-md-4 col-sm-6">
+                     <div class="single__beyond__item text-center">
+                        <h5>BART Raffle</h5>
+                        <p>Engage in thrilling raffle events with your $BART tokens.</p>
+                     </div>
+                  </div>
+                  <div class="mb-3 col-md-4 col-sm-6">
+                     <div class="single__beyond__item text-center">
+                        <h5>Voting</h5>
+                        <p>Shape the community's future by participating in important decisions using your $BART.</p>
+                     </div>
+                  </div>
+                  <div class="mb-3 col-md-4 col-sm-6">
+                     <div class="single__beyond__item text-center">
+                        <h5>Staking  Pool  Wear</h5>
+                        <p>Multiply your holdings by staking $BART tokens and earning rewards.</p>
+                     </div>
+                  </div>
+                  <div class="mb-3 col-md-4 col-sm-6">
+                     <div class="single__beyond__item text-center">
+                        <h5>BART  Bridge</h5>
+                        <p>Connect $BART with various blockchains for expanded possibilities.</p>
+                     </div>
+                  </div>
+                  <div class="mb-3 col-md-4 col-sm-6">
+                     <div class="single__beyond__item text-center">
+                        <h5>Mini  Games</h5>
+                        <p>Enjoy entertaining mini-games while earning $BART rewards.</p>
+                     </div>
+                  </div>
+                  <figure class="cloudImg bottom"><img src="/assets/large-cloud-9oTb4rN-.png" alt=""></figure>
+               </div>
+            </div>
+         </section>
+         <footer class="footer__area text-center">
+            <div class="footer__top">
+               <div class="container">
+                  <div class="row">
+                     <div class="col">
+                        <h2>JOIN  BART&nbsp;AND LETS BARK  OUR  WAY TO  CRYPTO  STARDOM  TOGETHER!</h2>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="footer__middle_w_bottom">
+               <figure class="footerM_Img"><img src="/assets/Bartimage--j755QeN.svg" alt=""></figure>
+               <div class="footer__middle">
+                  <div class="container">
+                     <div class="align-items-center row">
+                        <div class="text-center text-md-left col-md-3">
+                           <a href="#hero" class="footer_logo">
+                              <figure><img src="/assets/site-logo-pWmffSJa.svg" alt=""></figure>
+                           </a>
+                        </div>
+                        <div class="text-center col-md-6">
+                           <ul class="footer_menu">
+                              <li><a href="#hero">home</a></li>
+                              <li><a href="#about">ABOUT</a></li>
+                              <li><a href="#tokenomics">Tokenomics</a></li>
+                              <li><a href="#howtobuy">how to buy</a></li>
+                              <li><a href="#roadmap">roadmap</a></li>
+                           </ul>
+                        </div>
+                        <div class="col-md-3">
+                           <ul class="social_items text-center text-md-end mt-4 mt-md-0">
+                              <li>
+                                 <a href="https://t.me/bartcoinsol">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                       <path d="M22.0846 3.09663C21.9941 3.01851 21.8841 2.96657 21.7663 2.94641C21.6485 2.92626 21.5274 2.93865 21.4161 2.98226L2.41676 10.4176C2.18567 10.508 1.99015 10.671 1.85957 10.882C1.72899 11.093 1.67039 11.3407 1.69258 11.5878C1.71477 11.835 1.81655 12.0683 1.98263 12.2527C2.14871 12.437 2.37013 12.5626 2.61364 12.6104L7.68739 13.6069V19.2498C7.68749 19.5114 7.76577 19.767 7.91217 19.9838C8.05857 20.2006 8.26642 20.3687 8.50904 20.4665C8.75166 20.5643 9.01797 20.5874 9.27381 20.5328C9.52965 20.4782 9.76334 20.3484 9.94489 20.1601L12.4424 17.5698L16.3405 20.9869C16.5785 21.1975 16.8852 21.3139 17.203 21.3141C17.3418 21.3138 17.4797 21.292 17.6118 21.2494C17.8283 21.1809 18.0231 21.0568 18.1768 20.8895C18.3304 20.7222 18.4375 20.5176 18.4874 20.296L22.2955 3.7407C22.3223 3.62431 22.3168 3.50282 22.2796 3.38933C22.2424 3.27583 22.175 3.17463 22.0846 3.09663ZM2.81707 11.5032C2.81348 11.4935 2.81348 11.4829 2.81707 11.4732C2.82131 11.4699 2.82606 11.4674 2.83114 11.4657L17.8039 5.60445L8.11957 12.5419L2.83114 11.5069L2.81707 11.5032ZM9.13489 19.3782C9.10905 19.405 9.07581 19.4235 9.03941 19.4314C9.00301 19.4392 8.9651 19.4361 8.9305 19.4223C8.89591 19.4085 8.8662 19.3847 8.84517 19.354C8.82413 19.3233 8.81272 19.287 8.81239 19.2498V14.3851L11.5958 16.8226L9.13489 19.3782ZM17.3914 20.0419C17.3845 20.0736 17.3692 20.1029 17.3471 20.1267C17.325 20.1504 17.2969 20.1678 17.2658 20.1769C17.2341 20.1881 17.1999 20.1905 17.1669 20.1839C17.1339 20.1773 17.1033 20.1619 17.0783 20.1394L9.15364 13.1879L20.9061 4.76538L17.3914 20.0419Z" fill="white"></path>
+                                    </svg>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="https://twitter.com/bartcoinsol">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                       <path d="M18.901 1.65283H22.581L14.541 10.8428L24 23.3458H16.594L10.794 15.7618L4.156 23.3458H0.474L9.074 13.5158L0 1.65383H7.594L12.837 8.58583L18.901 1.65283ZM17.61 21.1438H19.649L6.486 3.73983H4.298L17.61 21.1438Z" fill="white"></path>
+                                    </svg>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="footer_bottom">
+               <div class="container">
+                  <div class="align-items-center row">
+                     <div class="text-center col">
+                        <p>©2024 All Rights Reserved $BART Token</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </footer>
+      </div>
+   </body>
+</html>
